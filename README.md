@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔒 SecureSight Dashboard
 
-## Getting Started
+A full-stack surveillance monitoring dashboard built using **Next.js**, **Prisma**, and **PostgreSQL**. SecureSight helps in tracking real-time incidents across multiple camera locations with role-based access and centralized management.
 
-First, run the development server:
+## 🚀 Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live Demo 👉 [https://securesight.vercel.app](https://securesight.vercel.app) *(Add your actual deployed link here)*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 📍 **Live Incident Tracking**  
+  Monitor incidents based on their camera location.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ✅ **Status Management**  
+  View and manage incidents as Resolved or Unresolved.
 
-## Learn More
+- 🔐 **Role-Based Authentication**  
+  Admin and Guard roles implemented using NextAuth.js.
 
-To learn more about Next.js, take a look at the following resources:
+- 📦 **Clean REST API Architecture**  
+  Built using Next.js API routes and Prisma ORM.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧑‍💻 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Layer        | Tech Used             |
+|--------------|------------------------|
+| Frontend     | Next.js, Tailwind CSS  |
+| Backend      | Node.js (Next.js API Routes) |
+| ORM/Database | Prisma + PostgreSQL    |
+| Auth         | NextAuth.js            |
+| Hosting      | Vercel                 |
 
-## Deploy on Vercel
+## 🏗️ Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+/
+├── app/ # Next.js app directory
+├── components/ # Reusable UI components
+├── lib/ # Utility functions & Prisma instance
+├── pages/ # API routes and NextAuth setup
+├── prisma/ # DB schema & migrations
+└── public/ # Static assets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧠 Challenges Faced
+1. Resolved Git submodule issues by migrating to a monorepo setup.
+2. Learned secure authentication integration using NextAuth.
+3. Structured API routes and DB schema for scalable growth.
+
+🙌 Author
+Vaibhav Sharma
+👨‍💻 MCA | Full Stack Developer
+📧 vaibhavsharma585.vs@gmail.com
+🔗 https://www.linkedin.com/in/vaibhavsharma-in/
