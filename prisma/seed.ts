@@ -23,6 +23,7 @@ async function main() {
     data: [
       {
         type: 'Unauthorized Access',
+        message: 'A person entered restricted area without permission.',
         tsStart: new Date('2025-07-22T10:00:00Z'),
         tsEnd: new Date('2025-07-22T10:05:00Z'),
         cameraId: cameras[0].id,
@@ -30,6 +31,7 @@ async function main() {
       },
       {
         type: 'Gun Threat',
+        message: 'A person was seen with a firearm near the entrance.',
         tsStart: new Date('2025-07-22T11:00:00Z'),
         tsEnd: new Date('2025-07-22T11:15:00Z'),
         cameraId: cameras[2].id,
@@ -37,6 +39,7 @@ async function main() {
       },
       {
         type: 'Unauthorized Access',
+        message: 'A suspicious individual was found inside the building.',
         tsStart: new Date('2025-07-22T12:00:00Z'),
         tsEnd: new Date('2025-07-22T12:10:00Z'),
         cameraId: cameras[5].id,
@@ -51,6 +54,7 @@ async function main() {
 main()
   .catch((e) => {
     console.error('❌ Seeding failed:', e);
+    process.exit(1);
   })
   .finally(async () => {
     await prisma.$disconnect();
