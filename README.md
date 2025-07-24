@@ -4,7 +4,7 @@ A full-stack surveillance monitoring dashboard built using **Next.js**, **Prisma
 
 ## 🚀 Demo
 
-Live Demo 👉 [https://securesight.vercel.app](https://securesight.vercel.app) *(Add your actual deployed link here)*
+Live Demo 👉 [https://my-secure-site2.vercel.app/](https://my-secure-site2.vercel.app/) 
 
 ## 📸 Features
 
